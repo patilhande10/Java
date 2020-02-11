@@ -1,17 +1,14 @@
 package exam;
 
-	public class SumArray {
+public class SumArray {
+    public static void main(String[] args) {
+        int ar[] = {1,2,3,4,5};
+        int sum =0;
 
-	    public static void main(String[] args) {
+        for(int i=0;i<ar.length;i++){
+           sum = sum + ar[i];
+        }
 
-	        int number = 5;
-	        long fact = 1;
-	        for(int i = 1; i <= number; i++)
-	        {
-	            fact = fact * i;
-	        }
-	        System.out.println("Factorial of "+number+" is: "+fact);
-	    }
-	}
-
-
+        System.out.println("Sum of array = "+sum);
+    }
+}
